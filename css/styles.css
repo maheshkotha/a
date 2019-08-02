@@ -1,0 +1,4067 @@
+/*
+The Purpose of the Stylesheet is to add the styling to "This is DOOM"
+@ version 0.0.1
+*/
+
+/* 
+    Created on : 17-07-2019
+    Author     : Mahesh
+*/
+
+/* Common Styles */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+* { box-sizing: border-box; }
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul { list-style-type: none }
+
+li { float: left; list-style-type: none; }
+
+
+/*   Screen width minimum 1280 px;  */
+@media only screen and (min-width: 1224px) {
+
+  /* Alinement */
+  .alinement {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  /* 1. Header */
+  .acer-header {
+    position: relative;
+    width:100%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* 1.1 Top Navigation Bar */
+  .acer-header__top-navbar {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #000;
+  }
+
+  .acer-header__top-menu {
+    position: relative;
+    height: 100%;
+    font-size: 9px;
+  }
+
+  /* Top Menu */
+  .top-menu {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    transform: translateY(-50%);
+  }
+
+  .top-menu-link {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #aaa;
+  }
+
+  .top-menu .top-menu-items:not(:last-child):after {
+    content: "|";
+    color: #fff9;
+  }
+
+  /* Social Media icons */
+  .social-media-menu {
+    position: relative;
+    height: 100%;    
+    float: right;
+  }
+
+  .social-menu-items {
+    height: 100%;
+    padding: 13px;
+    border-left: 1px solid #fff5;
+  }
+
+  .social-media-menu .social-menu-items:last-child {
+    border-right: 1px solid #fff5;
+  }
+
+  .social-menu-link {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  /* X Style */
+  .xstyle {
+    position: absolute;
+    width: 37%;
+    height: 36px;
+    bottom: -1px;
+    left: -20px;
+    transform: skewX(40deg);
+    background: #fff;
+  }
+
+  /* 1.2  Title and Contatct Information */
+  .acer-header__title-contact {
+    position: relative;
+    height: 150px;
+  }
+
+  /* Logo - Title */
+  .acer-header__logo-title {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+
+  .acer-header__acer-logo {
+    position: absolute;
+    width: 23%;
+    top: 50%;
+    left: 0;
+    padding: 5px;
+    transform: translateY(-50%);
+  }
+
+  .acer-header__acer-logo img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .acer-header__title {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding-left: 15px;
+  }
+
+  .acer-title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #072c64;
+    font-weight: 600;
+  }
+
+  .acer-sub-title {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #999;
+    font-weight: 900;
+  }
+
+  .acer-header__icon-contact {
+    position: relative;
+    width: 21%;
+    height: 100%;
+    padding-left: 10px;
+    float: left;
+  }
+
+  .first-child{ width:28%; }
+
+  .acer-header__icon {
+    position: absolute;
+    padding: 5px;
+    width: 30%;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .location-image {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border: 2px solid #f70;
+    border-radius: 50%;
+  }
+
+  .acer-header__contact {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .contact-title {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .contact-details {
+    font-size: 9px;
+    font-weight: 600;
+    word-spacing: 1px;
+  }
+
+  /* 1.3 Main Menubar */
+  .acer-header__main-menubar {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: #079;
+  }
+
+  .menubar-wraper {
+    height: 100%;
+    color: #fff;
+  }
+
+  .main-navbar {
+    position:absolute;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .main-navbar-item {
+    position: relative;
+    height: 100%;
+    padding: 11px;
+    box-sizing: padding-box;
+    transition: all .3s ease-in-out;
+  }
+
+  .main-navbar-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border:2px solid transparent;
+    transition: all .3s ease-in-out;
+  }
+  
+  .main-navbar-item:hover:before{
+    border-top: 2px solid #f90;
+
+  }
+
+  .main-navbar-link {
+    text-decoration: none;
+    color: #fff;
+  }
+  #menubar {
+    display: none;
+  }
+
+  .get-quote {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    float: right;
+    padding: 16px;
+    background: #f90;
+  }
+
+  /* Carousel */
+  .acer-carousel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #999;
+    overflow: hidden;
+  }
+
+  .btan {
+    display: block;
+    padding: 40px 15px;
+    width: 40px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: #0009;
+    z-index: 999;
+  }
+
+  #acer-carousel__left-btan {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  #acer-carousel__right-btan {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  /* acer-carousel-slide  */
+  .carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 500ms ease-in;
+    transition: -webkit-transform 500ms ease-in;
+    -o-transition: transform 500ms ease-in;
+    transition: transform 500ms ease-in;
+    transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
+  }
+
+  .acer-carousel__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #494747;
+  }
+
+  .acer-carousel__freight-box-wraper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* freight-box */
+  .acer-carousel__freight-box {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 50%;
+    left: 20%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .acer-carousel__freight-box h2 {
+    color: #fff;
+    font-size: 51px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 900;
+  }
+
+  .acer-carousel__freight-box span {
+    line-height: 30px;
+    color: #ffa900;
+    font-family: Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+  }
+
+  .acer-carousel__freight-box p {
+      font-size: 14px;
+    line-height: 1.8;
+      color: rgba(255,255,255,0.9);
+      font-family: Roboto, sans-serif;
+      word-spacing: 1px;
+  }
+
+  .freight-box-btan {
+    display: inline-block;
+      margin-top: 30px;
+      padding: 11px 29px;
+      background: #1766aa;
+      border-radius: 3px;
+      font-size: 11px;
+      color: #fff;
+      cursor: pointer;
+      font-family: Roboto, sans-serif;
+      font-weight: 600;
+  }
+
+  .acer-carousel__nav {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    cursor: pointer;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 999;
+  }
+
+  /* carousel -navigation */
+  .carousel-indicator {
+    padding: 5px;
+    margin: 3px;
+    background: #fff5;
+    border-radius: 50%;
+    float: left;
+  }
+
+  .curr-slide {
+    background: #fff;
+  }
+
+  .is-hidden {
+    display: none;
+  }
+
+
+  /* Safe abd Secure */
+  .acer-safe-secure {
+    width: 100%;
+    padding: 120px 0;
+    color: #fff;
+  }
+
+
+  .acer-safe-secure__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  /* affordable */
+  .acer-safe-secure__affordable {
+    position: relative;
+    width: 32%;
+    height: 300px;
+    background: #ddd;
+  }
+
+  .acer-safe-secure__affordable > div {
+    position: absolute;
+    width: 85%;
+    background: #07f;
+    bottom: 35px;
+    right: 0;
+    padding: 5px 10px;
+    border-left: 2px solid #ffa900;
+  }
+
+  .acer-safe-secure p {
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 2;
+  }
+
+  .acer-safe-secure h3 {
+    font-size: 14px;
+  }
+
+  .acer-safe-secure i {
+    line-height: 2;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  /* cargo services*/
+  .acer-cargo-services {
+    width: 100%;
+    background: #079;
+  }
+
+  .acer-cargo-services__cargo-services-header {
+    width: 100%;
+    height: 120px;
+    background: #079;
+  }
+
+  .acer-cargo-services__cargo-services-header h2 {
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+  }
+
+  .acer-cargo-services__cargo-services-header p {
+    font-size: 14px;
+    word-spacing: 2px;
+  }
+
+  .get {
+      width: 60%;
+      height: 100%;
+      margin: 0 auto;
+      color: #fff;
+      position: relative;
+    }
+    .get > div {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+    }
+    
+    
+    .get span {
+      position: absolute;
+      top:50%;
+      right: 30px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      border: 1px solid #fff;
+      padding: 6px 8px;
+    }
+
+  .acer-cargo-services__our-service {
+    width: 100%;
+    padding: 70px 20%;
+    background: #111;
+  }
+
+  .services-heading {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+
+  .services-heading h2 {
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .services-heading h2:after {
+    content: "";
+    position: absolute;
+      border-bottom: 2px solid #fff;
+      width: 70px;
+      bottom: -13px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+  }
+
+  .services-heading i {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 100px;
+    font-style: italic;
+    color: #aaa;
+  }
+
+  /* services cards */
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 54px;
+  }
+  .service-cards-wraper {
+    width: 240px;
+    height: 120px;
+    position: relative;
+    border:1px solid #ffa900;
+    float: left;
+  }
+
+  .service-cards-icon {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+
+  .service-cards-icon .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+
+  .service-cards-content {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 40px 10px;
+  }
+
+  .service-cards-content h3 {
+    color: #aaa900;
+  }
+  .service-cards-content span{
+    color: #fff5;
+    font-size: 12px;
+  }
+
+  /* Request Quote */
+  .request {
+    width: 100%;
+    height: 600px;
+    padding: 30px 0; 
+  }
+
+  .request-quote {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+
+  /* Request Quote left */
+  .request-quote-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .quote-left {
+    width:70%;
+    height: 90%;
+    background: #9999;
+    position: absolute;
+    right: 50px;
+  }
+
+  /* Request Quote right */
+  .request-quote-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding:0 30px;
+    position: relative;
+  }
+
+  .request-quote-right h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .request-quote-right span {
+    color: #999;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .request-quote-right input[type='text'], select {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-style: italic;
+    color: #0009;
+  }
+
+
+  .request-quote-right textarea {
+    width: 98%;
+    border-radius: 5px;
+  }
+
+  .note {
+    margin-top: 20px;
+    float: left;
+    font-size: 12px;
+  }
+
+  .submit {
+    padding: 10px 15px;
+    float: right;
+    font-size: 12px;
+    border-radius: 3px;
+    background: #00f;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* OR */
+  .or {
+    width: 100%;
+    height: 300px;
+    background: #990;
+    position: relative;
+  }
+
+  .or-center {
+    width:50px;
+    height: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: #222;
+    -webkit-box-shadow: 0 0 2px 5px #1115;
+            box-shadow: 0 0 2px 5px #1115;
+    z-index: 99;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .or-center h1 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .or-left {
+    width: 50%;
+    height: 100%;
+    background: #2943e9;
+    float: left;
+    position: relative;
+  }
+
+  .or-left-pos {
+    width:50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 20px 50px;
+    text-align: center;
+  }
+
+  .or-left-pos h1 {
+    font-size: 30px;  
+    margin-bottom: 10px;  
+  }
+
+  .or span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .or-btn {
+    display: block;
+    border: 1px solid #fff;
+    padding: 5px 0px;
+    width:80px;
+    margin: 5px auto;
+  }
+  .or-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: #555;
+    position: relative;
+  }
+
+  .or-right-pos {
+    width:50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 20px 50px;
+    text-align: center;
+  }
+
+
+  .or-right-pos h1 {
+    font-size: 30px;  
+    margin-bottom: 10px;  
+  }
+
+
+  .acer-our-clients {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+  }
+
+  .acer-our-clients__from {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .acer-our-clients__title {
+    position: relative;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+
+  .acer-our-clients__title:after {
+    content: "";
+    display: block;
+    width: 75px;
+    border-bottom: 2px solid #079;
+    margin: 15px auto;
+
+  }
+
+  .acer-our-clients__desc {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .acer-our-clients__carousel {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    margin-top: 50px;
+  }
+
+
+  #acer-carousel__left-btanc {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    padding: 5px;
+    color: #1115;
+    background: #ddd5;
+    transform: translateY(-50%);
+
+  }
+
+  #acer-carousel__right-btanc {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding: 5px;
+    background: #059;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+
+  .acer-our-clients__mails {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 90%;
+  }
+
+  .mails-content {
+    position: relative;
+    width: 48%;
+    height: 100%;
+    float: left;
+    margin: 0 5px;
+  }
+
+  .client-message {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    float: left;
+    padding: 5px;
+    font-size: 12px;
+
+  }
+
+  .client-message:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ddd9;
+  }
+
+  .client-message:before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    font-size: 70px;
+    color: #f90;
+    z-index: 999;
+  }
+
+  .message {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 100%;
+    padding:30px 20px 0;
+    background: #ddd9;
+  }
+
+  .client-profile {
+    position:relative;
+    width: 100%;
+    height: 40%;
+    float: left;
+    bottom: 0;
+  }
+
+  .pic {
+    position: relative;
+    top: 35px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    float: left;
+    background: #aaa5;
+    border-radius: 50%;
+  }
+
+  .name {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    float: right;
+    right: 30px;
+    top: 60px;
+  }
+
+  .name h3 {
+    color: #f90;
+  }
+
+  .name span {
+    font-style: italic;
+    font-size: 10px;
+  }
+
+  .acer-our-carousel-nav {
+    position: absolute;
+    bottom: 1px;
+    left: 46%;
+    transform: translateX(-50);
+  }
+
+  .indicate {
+    padding:2px;
+    margin: 4px;
+    display: inline-block;
+    background: #00f5;
+  }
+
+  .selected { background: #00f; }
+
+  /* Freight flex */
+  .freight {
+    width: 100%;
+    height: 550px;
+    padding: 100px 0;
+  }
+
+  .freight-flex-container { display: -webkit-box;display: -ms-flexbox;display: flex; }
+
+  .freight-flex-container > div:nth-child(even) {
+    background-color: #ddd;
+    padding: 20px;
+    font-size: 30px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .freight-flex-container > div:nth-child(odd) {
+    background-color: #15f5;
+    padding: 20px;
+    font-size: 30px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .freight-flex-container h1 { font-size: 20px; }
+
+  .freight-flex-container span {
+    font-size: 12px;
+    color: #f0f;
+  }
+
+  .freight-flex-container p { 
+    font-size: 12px;
+    line-height: 2;
+   }
+
+  .freight-flex-container-odd { display: -webkit-box;display: -ms-flexbox;display: flex; }
+
+  .freight-flex-container-odd > div:nth-child(even) {
+    background-color: #15f5;
+    padding: 20px;
+    font-size: 30px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .freight-flex-container-odd > div:nth-child(odd) {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 30px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .freight-flex-container-odd h1 { font-size: 20px; }
+
+  .freight-flex-container-odd span {
+    font-size: 12px;
+    color: #f0f;
+  }
+
+  .freight-flex-container-odd p { 
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .our-blog {
+    position: relative;
+    width:100%;
+    height: 700px;
+    padding: 50px;
+  }
+
+  .our-blog-header {
+    text-align: center;
+    height: 150px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .our-blog-header h2 {
+    font-size: 30px;
+  }
+
+  .our-blog-header h3 {
+    border-bottom: 2px solid #3b3be5;
+    width: 80px;
+    margin: 15px auto;
+  }
+
+  .our-blog-header p {
+    margin-top: 20px;
+    opacity: .8;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .our-blog-flex {
+    width: 60%;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+  }
+
+  .our-blog-flex > div {
+    border-right: 5px solid #fff;
+    height: 400px;
+    width: 33.3%;
+    position: relative;
+    background-color: #f6f6f6;
+  }
+
+  .our-blog-flex div:last-child { border: none; }
+
+  .our-blog-flex-top {
+    height: 50%;
+    background: #333;
+  }
+
+  .our-blog-flex-center {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: #079;
+  }
+  .our-blog-flex-bottom {
+    width:85%;
+    padding-top: 30px;
+    margin:10px auto;
+  }
+
+  .our-blog-flex-bottom h2 {
+    font-size:14px;
+    margin-top: 10px;
+    font-weight: bold; 
+  }
+
+  .our-blog-flex-bottom span {
+    font-size: 10px;
+    font-style: italic;
+    color: #fad148;
+  }
+
+  .our-blog-flex-bottom p {
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 30px;
+  }
+
+  .flex-box-row {
+    height: 100px;
+    width: 60%;
+    background: #aaa;
+    margin:0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .acer-flex {
+    width: 100%;
+    height: 100px;
+    background: #eee;
+  }
+
+  .acer-flex-class {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    /*padding: 0 1%;*/
+    margin: 0 auto;
+
+  }
+  .acer-flex-class > div {
+    width: 12.5%;
+    height: 50%;
+    float: left;
+    background: #ddd;
+    margin: 25px 2%;
+  
+  }
+
+  .acer-flex-class div:first-child {
+    margin-left: 10px;
+  }
+
+  /* Footer */
+  .acer-footer {
+    width: 100%;
+    height: 600px;
+    background: #1f1f1f;
+    position: relative;
+  }
+
+  .subscribe {
+    width: 60%;
+    height: 80px;
+    margin:0 auto;
+    background: #1e71b4;
+    position: relative;
+    color: #fff;
+    padding-top: 20px;
+  }
+
+  .subscribe span:first-child {
+    position: absolute;
+    left: 10px;
+    top: 29px;
+  }
+
+  .subscribe span {
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+
+  .sub-email {
+    position: absolute;
+    left: 35%;
+    display: inline-block;
+    width: 40%;
+    padding: 7px;
+    border: 1px solid #fff;
+  }
+
+  .sub-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #079;
+    border-radius: 5px;
+    position: absolute;
+    right: 22px;
+    float: right;
+    top: 20px;
+  }
+
+  /* Footer coloumns */
+  .footer-cols {
+    width:60%;
+    height: 450px;
+    margin:0 auto;
+    position: relative;
+  }
+
+  .col {
+    width:25%;
+    height: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-right: 20px;
+    margin:0;
+    color: #fff;
+  }
+
+  .col h3 {
+    font-size: 13px;
+  }
+
+  .col h3:after {
+    content: "";
+    padding-bottom: 15px;
+    border-bottom: 2px solid #0037ff;
+    width: 35px;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .col p {
+    font-size: 12px;
+    margin-bottom: 25px;
+    line-height: 2;
+    color: #aaa;
+  }
+  .col li {
+    float: left;
+    margin: 4px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+  }
+
+  .row {    height: 120px;
+      margin-bottom: 15px;
+  }
+
+  .tweet-icon {
+    height: 100%;
+    width: 10%;
+    position: relative;
+    float: left;
+    color: #999;
+  }
+
+  .url-path {
+    width: 90%;
+    height: 100%;
+    float: right;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+  .url-path p {
+    padding: 0;
+    margin-bottom: 0;
+    display: inline;
+  }
+
+  .url {
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  .url-path a { color: #079; }
+
+  .url-path span {
+    display: block;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .recent-row {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 14px;
+  }
+
+  .recent .recent-row:last-child {
+    border: none;
+  }
+
+  .recent-row-img {
+    width: 25%;
+    height: 40px;
+    float: left;
+    background: #999;
+  }
+
+  .recent-row-content {
+    width: 75%;
+    height: 40px;
+    float: right;
+    padding-left: 10px;
+  }
+
+  .recent-row-content span {
+    display: block;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  .recent-row-content i {
+    font-size: 9px;
+    font-style: italic;
+    color: #f49809;
+  }
+
+  .lastchild-row {
+    width: 100%;
+    height: 46px;
+    display: block;
+    padding-top: 4px;
+    overflow: hidden;
+  }
+
+  .lastchild-row span {
+    display: block;
+    float: right;
+    width: 80%;
+    height: 75%;
+    font-size: 10px;
+    margin-top: 5px;
+    line-height: 2;
+  }
+  .lastchild-row img {
+    margin-top: 6px;
+    width: 12%;
+    height: 50%;
+  }
+
+  /* Footer Bottom */
+  .acer-footer__bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background: #000;
+  }
+
+  .bottom {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .bottom-start {
+    display: block;
+    float: left;
+    font-size: 10px;
+    padding: 15px 0;
+  }
+
+  .bottom-end { 
+    float: right;
+    margin-top: 17px;
+  }
+
+  .bottom-end li {
+    padding: 0px 20px;
+    font-size: 10px;
+    list-style-type: none;
+    border-right: 1px solid #fff;
+  }
+
+  .bottom-end li:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+}
+
+/* Min Width 768px */
+@media only screen and (min-width: 768px) and (max-width: 1224px) {
+
+  /* Alinement */
+  .alinement {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  /* 1. Header */
+  .acer-header {
+    position: relative;
+    width:100%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* 1.1 Top Navigation Bar */
+  .acer-header__top-navbar {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #000;
+  }
+
+  .acer-header__top-menu {
+    position: relative;
+    height: 100%;
+    font-size: 9px;
+  }
+
+  /* Top Menu */
+  .top-menu {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translateY(-50%);
+  }
+
+  .top-menu-link {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #aaa;
+  }
+
+  .top-menu .top-menu-items:not(:last-child):after {
+    content: "|";
+    color: #fff9;
+  }
+
+  /* Social Media icons */
+  .social-media-menu {
+    position: relative;
+    height: 100%;    
+    float: right;
+  }
+
+  .social-menu-items {
+    height: 100%;
+    padding: 13px;
+    border-left: 1px solid #fff5;
+  }
+
+  .social-media-menu .social-menu-items:last-child { border-right: 1px solid #fff5; }
+
+  .social-menu-link {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  /* X Style */
+  .xstyle {
+    position: absolute;
+    width: 37%;
+    height: 36px;
+    bottom: -1px;
+    left: -20px;
+    transform: skewX(40deg);
+    background: #fff;
+  }
+
+  /* 1.2  Title and Contatct Information */
+  .acer-header__title-contact {
+    position: relative;
+    height: 150px;
+    padding: 5px;
+  }
+
+  /* Logo - Title */
+  .acer-header__logo-title {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+
+  .acer-header__acer-logo {
+    position: absolute;
+    width: 23%;
+    top: 50%;
+    left: 0;
+    padding: 5px;
+    transform: translateY(-50%);
+  }
+
+  .acer-header__acer-logo img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .acer-header__title {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding-left: 15px;
+  }
+
+  .acer-title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #072c64;
+    font-weight: 600;
+  }
+
+  .acer-sub-title {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #999;
+    font-weight: 900;
+  }
+
+  .acer-header__icon-contact {
+    position: relative;
+    width: 22%;
+    height: 100%;
+    float: left;
+  }
+
+  .first-child{ width:26%; }
+
+  .acer-header__icon {
+    position: absolute;
+    padding: 5px;
+    width: 30%;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .location-image {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border: 2px solid #f70;
+    border-radius: 50%;
+  }
+
+  .acer-header__contact {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    right: 0;
+    padding-left: 5px;
+    transform: translateY(-50%);
+  }
+
+  .contact-title {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .contact-details {
+    font-size: 9px;
+    font-weight: 600;
+    word-spacing: 1px;
+  }
+
+  /* 1.3 Main Menubar */
+  .acer-header__main-menubar {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: #079;
+  }
+
+  .menubar-wraper {
+    height: 100%;
+    color: #fff;
+  }
+
+  .main-navbar {
+    position:absolute;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .main-navbar-item {
+    position: relative;
+    height: 100%;
+    padding: 11px;
+    box-sizing: padding-box;
+    transition: all .3s ease-in-out;
+  }
+
+  .main-navbar-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border:2px solid transparent;
+    transition: all .3s ease-in-out;
+  }
+  
+  .main-navbar-item:hover:before{ border-top: 2px solid #f90;  }
+
+  .main-navbar-link {
+    text-decoration: none;
+    color: #fff;
+  }
+  #menubar {  display: none; }
+
+  .get-quote {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    float: right;
+    padding: 16px;
+    background: #f90;
+  }
+
+  /* Carousel */
+  .acer-carousel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #999;
+    overflow: hidden;
+  }
+
+  .btan {
+    display: block;
+    padding: 40px 15px;
+    width: 40px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: #0009;
+    z-index: 999;
+  }
+
+  #acer-carousel__left-btan {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  #acer-carousel__right-btan {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  /* acer-carousel-slide  */
+  .carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 500ms ease-in;
+    transition: -webkit-transform 500ms ease-in;
+    -o-transition: transform 500ms ease-in;
+    transition: transform 500ms ease-in;
+    transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
+  }
+
+  .acer-carousel__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #494747;
+  }
+
+  .acer-carousel__freight-box-wraper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* freight-box */
+  .acer-carousel__freight-box {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 50%;
+    left: 20%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .acer-carousel__freight-box h2 {
+    color: #fff;
+    font-size: 51px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 900;
+  }
+
+  .acer-carousel__freight-box span {
+    line-height: 30px;
+    color: #ffa900;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .acer-carousel__freight-box p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.9);
+    font-family: Roboto, sans-serif;
+    word-spacing: 1px;
+  }
+
+  .freight-box-btan {
+    display: inline-block;
+      margin-top: 30px;
+      padding: 11px 29px;
+      background: #1766aa;
+      border-radius: 3px;
+      font-size: 11px;
+      color: #fff;
+      font-family: Roboto, sans-serif;
+      font-weight: 600;
+  }
+
+  .acer-carousel__nav {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    cursor: pointer;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 999;
+  }
+
+  /* carousel -navigation */
+  .carousel-indicator {
+    padding: 5px;
+    margin: 3px;
+    background: #fff5;
+    border-radius: 50%;
+    float: left;
+  }
+
+  .curr-slide {  background: #fff; }
+
+  .is-hidden { display: none; }
+
+
+  /* Safe abd Secure */
+  .acer-safe-secure {
+    width: 100%;
+    padding: 120px 0;
+    color: #fff;
+  }
+
+
+  .acer-safe-secure__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  /* affordable */
+  .acer-safe-secure__affordable {
+    position: relative;
+    width: 32%;
+    height: 300px;
+    background: #ddd;
+  }
+
+  .acer-safe-secure__affordable > div {
+    position: absolute;
+    width: 85%;
+    background: #07f;
+    bottom: 35px;
+    right: 0;
+    padding: 5px 10px;
+    border-left: 2px solid #ffa900;
+  }
+
+  .acer-safe-secure p {
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 2;
+  }
+
+  .acer-safe-secure h3 { font-size: 14px; }
+
+  .acer-safe-secure i {
+    line-height: 2;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  /* cargo services*/
+  .acer-cargo-services {
+    width: 100%;
+    background: #079;
+  }
+
+  .acer-cargo-services__cargo-services-header {
+    width: 100%;
+    height: 120px;
+    background: #079;
+  }
+
+  .acer-cargo-services__cargo-services-header h2 {
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+  }
+
+  .acer-cargo-services__cargo-services-header p {
+    font-size: 14px;
+    word-spacing: 2px;
+  }
+
+  .get {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      color: #fff;
+      position: relative;
+    }
+  
+  .get > div {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+    
+  .get span {
+    position: absolute;
+    top:50%;
+    right: 30px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    border: 1px solid #fff;
+    padding: 6px 8px;
+  }
+
+  .acer-cargo-services__our-service {
+    width: 100%;
+    padding: 70px 50px;
+    background: #111;
+  }
+
+  .services-heading {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+
+  .services-heading h2 {
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .services-heading h2:after {
+    content: "";
+    position: absolute;
+      border-bottom: 2px solid #fff;
+      width: 70px;
+      bottom: -13px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+  }
+
+  .services-heading i {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 100px;
+    font-style: italic;
+    color: #aaa;
+  }
+
+  /* services cards */
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 54px;
+  }
+  
+  .service-cards-wraper {
+    width: 200px;
+    height: 120px;
+    position: relative;
+    border:1px solid #ffa900;
+    float: left;
+  }
+
+  .service-cards-icon {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+
+  .service-cards-icon .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+
+  .service-cards-content {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 40px 10px;
+  }
+
+  .service-cards-content h3 { color: #aaa900; }
+  
+  .service-cards-content span{
+    color: #fff5;
+    font-size: 12px;
+  }
+
+  /* Request Quote */
+  .request {
+    width: 100%;
+    height: 600px;
+    padding: 30px 0; 
+  }
+
+  .request-quote {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+
+  /* Request Quote left */
+  .request-quote-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .quote-left {
+    width:70%;
+    height: 90%;
+    background: #9999;
+    position: absolute;
+    right: 50px;
+  }
+
+  /* Request Quote right */
+  .request-quote-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding:0 30px;
+    position: relative;
+  }
+
+  .request-quote-right h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .request-quote-right span {
+    color: #999;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .request-quote-right input[type='text'], select {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-style: italic;
+    color: #0009;
+  }
+
+
+  .request-quote-right textarea {
+    width: 98%;
+    border-radius: 5px;
+  }
+
+  .note {
+    margin-top: 20px;
+    float: left;
+    font-size: 12px;
+  }
+
+  .submit {
+    padding: 10px 15px;
+    float: right;
+    font-size: 12px;
+    border-radius: 3px;
+    background: #00f;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* OR */
+  .or {
+    width: 100%;
+    height: 300px;
+    background: #990;
+    position: relative;
+  }
+
+  .or-center {
+    width:50px;
+    height: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: #222;
+    -webkit-box-shadow: 0 0 2px 5px #1115;
+            box-shadow: 0 0 2px 5px #1115;
+    z-index: 99;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .or-center h1 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .or-left {
+    width: 50%;
+    height: 100%;
+    background: #2943e9;
+    float: left;
+    position: relative;
+  }
+
+  .or-left-pos {
+    width:70%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+  .or-left-pos h1 {
+    font-size: 30px;  
+    margin-bottom: 10px;  
+  }
+
+  .or span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .or-btn {
+    display: block;
+    border: 1px solid #fff;
+    padding: 5px 0px;
+    width:80px;
+    margin: 5px auto;
+  }
+
+  .or-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: #555;
+    position: relative;
+  }
+
+  .or-right-pos {
+    width:70%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+
+  .or-right-pos h1 {
+    font-size: 30px;  
+    margin-bottom: 10px;  
+  }
+
+
+  .acer-our-clients {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+  }
+
+  .acer-our-clients__from {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .acer-our-clients__title {
+    position: relative;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+
+  .acer-our-clients__title:after {
+    content: "";
+    display: block;
+    width: 75px;
+    border-bottom: 2px solid #079;
+    margin: 15px auto;
+
+  }
+
+  .acer-our-clients__desc {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .acer-our-clients__carousel {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    margin-top: 50px;
+  }
+
+
+  #acer-carousel__left-btanc {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    padding: 5px;
+    color: #1115;
+    background: #ddd5;
+    transform: translateY(-50%);
+
+  }
+
+  #acer-carousel__right-btanc {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding: 5px;
+    background: #059;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+
+  .acer-our-clients__mails {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 90%;
+  }
+
+  .mails-content {
+    position: relative;
+    width: 48%;
+    height: 100%;
+    float: left;
+    margin: 0 5px;
+  }
+
+  .client-message {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    float: left;
+    padding: 5px;
+    font-size: 12px;
+
+  }
+
+  .client-message:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ddd9;
+  }
+
+  .client-message:before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    font-size: 70px;
+    color: #f90;
+    z-index: 999;
+  }
+
+  .message {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 100%;
+    padding:30px 20px 0;
+    background: #ddd9;
+  }
+
+  .client-profile {
+    position:relative;
+    width: 100%;
+    height: 40%;
+    float: left;
+    bottom: 0;
+  }
+
+  .pic {
+    position: relative;
+    top: 35px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    float: left;
+    background: #aaa5;
+    border-radius: 50%;
+  }
+
+  .name {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    float: right;
+    right: 30px;
+    top: 60px;
+  }
+
+  .name h3 { color: #f90; }
+
+  .name span {
+    font-style: italic;
+    font-size: 10px;
+  }
+
+  .acer-our-carousel-nav {
+    position: absolute;
+    bottom: 1px;
+    left: 46%;
+    transform: translateX(-50);
+  }
+
+  .indicate {
+    padding:2px;
+    margin: 4px;
+    display: inline-block;
+    background: #00f5;
+  }
+
+  .selected { background: #00f; }
+
+  /* Freight flex */
+  .freight {
+    width: 100%;
+    height: 550px;
+    padding: 100px 0;
+  }
+
+  .freight-flex-container { display: -webkit-box;display: -ms-flexbox;display: flex; }
+
+  .freight-flex-container > div:nth-child(even) {
+    background-color: #ddd;
+    padding: 5px;
+    font-size: 30px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .freight-flex-container > div:nth-child(odd) {
+    background-color: #15f5;
+    font-size: 30px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .freight-flex-container h1 { font-size: 20px; }
+
+  .freight-flex-container span {
+    font-size: 12px;
+    color: #f0f;
+  }
+
+  .freight-flex-container p { 
+    font-size: 12px;
+    line-height: 2;
+   }
+
+  .freight-flex-container-odd { display: -webkit-box;display: -ms-flexbox;display: flex; }
+
+  .freight-flex-container-odd > div:nth-child(even) {
+    background-color: #15f5;
+    font-size: 30px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .freight-flex-container-odd > div:nth-child(odd) {
+    background-color: #f1f1f1;
+    padding: 5px;
+    font-size: 30px;
+    height: 200px;
+    width: 25%;
+  }
+
+  .freight-flex-container-odd h1 { font-size: 20px; }
+
+  .freight-flex-container-odd span {
+    font-size: 12px;
+    color: #f0f;
+  }
+
+  .freight-flex-container-odd p { 
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .our-blog {
+    position: relative;
+    width:100%;
+    height: 700px;
+    padding: 50px;
+  }
+
+  .our-blog-header {
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .our-blog-header h2 { font-size: 30px; }
+
+  .our-blog-header h3 {
+    border-bottom: 2px solid #3b3be5;
+    width: 80px;
+    margin: 15px auto;
+  }
+
+  .our-blog-header p {
+    margin-top: 20px;
+    opacity: .8;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .our-blog-flex {
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+  }
+
+  .our-blog-flex > div {
+    border-right: 5px solid #fff;
+    height: 400px;
+    width: 33.3%;
+    position: relative;
+    background-color: #f6f6f6;
+  }
+
+  .our-blog-flex div:last-child { border: none; }
+
+  .our-blog-flex-top {
+    height: 50%;
+    background: #333;
+  }
+
+  .our-blog-flex-center {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: #079;
+  }
+  .our-blog-flex-bottom {
+    width:85%;
+    padding-top: 30px;
+    margin:10px auto;
+  }
+
+  .our-blog-flex-bottom h2 {
+    font-size:14px;
+    margin-top: 10px;
+    font-weight: bold; 
+  }
+
+  .our-blog-flex-bottom span {
+    font-size: 10px;
+    font-style: italic;
+    color: #fad148;
+  }
+
+  .our-blog-flex-bottom p {
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 30px;
+  }
+
+  .flex-box-row {
+    height: 100px;
+    width: 60%;
+    background: #aaa;
+    margin:0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .acer-flex {
+    width: 100%;
+    height: 100px;
+    background: #eee;
+  }
+
+  .acer-flex-class {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    margin: 0 auto;
+
+  }
+  .acer-flex-class > div {
+    width: 12.5%;
+    height: 50%;
+    float: left;
+    background: #ddd;
+    margin: 25px 2%;
+  }
+  
+  .acer-flex-class div:first-child { margin-left: 10px;  }
+
+  /* Footer */
+  .acer-footer {
+    width: 100%;
+    height: 600px;
+    background: #1f1f1f;
+    position: relative;
+  }
+
+  .subscribe {
+    width: 100%;
+    height: 80px;
+    margin:0 auto;
+    background: #1e71b4;
+    position: relative;
+    color: #fff;
+    padding-top: 20px;
+  }
+
+  .subscribe span:first-child {
+    position: absolute;
+    left: 10px;
+    top: 29px;
+  }
+
+  .subscribe span {
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+
+  .sub-email {
+    position: absolute;
+    left: 35%;
+    display: inline-block;
+    width: 40%;
+    padding: 7px;
+    border: 1px solid #fff;
+  }
+
+  .sub-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #079;
+    border-radius: 5px;
+    position: absolute;
+    right: 22px;
+    float: right;
+    top: 20px;
+  }
+
+  /* Footer coloumns */
+  .footer-cols {
+    width:100%;
+    height: 450px;
+    padding: 10px;
+    margin:0 auto;
+    position: relative;
+  }
+
+  .col {
+    width:25%;
+    height: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-right: 20px;
+    margin:0;
+    color: #fff;
+  }
+
+  .col h3 { font-size: 13px;  }
+
+  .col h3:after {
+    content: "";
+    padding-bottom: 15px;
+    border-bottom: 2px solid #0037ff;
+    width: 35px;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .col p {
+    font-size: 12px;
+    margin-bottom: 25px;
+    line-height: 2;
+    color: #aaa;
+  }
+  
+  .col li {
+    float: left;
+    margin: 4px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+  }
+
+  .row {
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .tweet-icon {
+    height: 100%;
+    width: 10%;
+    position: relative;
+    float: left;
+    color: #999;
+  }
+
+  .url-path {
+    width: 90%;
+    height: 100%;
+    float: right;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+  .url-path p {
+    padding: 0;
+    margin-bottom: 0;
+    display: inline;
+  }
+
+  .url {
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  .url-path a { color: #079; }
+
+  .url-path span {
+    display: block;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+
+
+  .recent-row {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 14px;
+  }
+
+  .recent .recent-row:last-child {  border: none; }
+
+  .recent-row-img {
+    width: 25%;
+    height: 40px;
+    float: left;
+    background: #999;
+  }
+
+  .recent-row-content {
+    width: 75%;
+    height: 40px;
+    float: right;
+    padding-left: 10px;
+  }
+
+  .recent-row-content span {
+    display: block;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  .recent-row-content i {
+    font-size: 9px;
+    font-style: italic;
+    color: #f49809;
+  }
+
+  .lastchild-row {
+    width: 100%;
+    height: 46px;
+    display: block;
+    padding-top: 4px;
+    overflow: hidden;
+  }
+
+  .lastchild-row span {
+    display: block;
+    float: right;
+    width: 80%;
+    height: 75%;
+    font-size: 10px;
+    margin-top: 5px;
+    line-height: 2;
+  }
+  .lastchild-row img {
+    margin-top: 6px;
+    width: 12%;
+    height: 50%;
+  }
+
+  /* Footer Bottom */
+  .acer-footer__bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background: #000;
+  }
+
+  .bottom {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .bottom-start {
+    display: block;
+    float: left;
+    font-size: 10px;
+    padding: 15px 0;
+  }
+
+  .bottom-end {
+    float: right;
+    margin-top: 17px;
+  }
+
+  .bottom-end li {
+    padding: 0px 20px;
+    font-size: 10px;
+    list-style-type: none;
+    border-right: 1px solid #fff;
+  }
+
+  .bottom-end li:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  /* Alinement */
+  .alinement {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  /* 1. Header */
+  .acer-header {
+    position: relative;
+    width:100%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* 1.1 Top Navigation Bar */
+  .acer-header__top-navbar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: #000;
+  }
+
+  .acer-header__top-menu {
+    position: relative;
+    height: 100%;
+    font-size: 9px;
+  }
+
+  /* Top Menu */
+  .top-menu {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translateY(-50%);
+    display: none;
+  }
+
+  .top-menu-link {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #aaa;
+  }
+
+  .top-menu .top-menu-items:not(:last-child):after {
+    content: "|";
+    color: #fff9;
+  }
+
+  /* Social Media icons */
+  .social-media-menu {
+    position: relative;
+    height: 100%;    
+    float: right;
+  }
+
+  .social-menu-items {
+    height: 100%;
+    padding: 13px;
+    border-left: 1px solid #fff5;
+  }
+
+  .social-media-menu .social-menu-items:last-child { border-right: 1px solid #fff5; }
+
+  .social-menu-link {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  /* X Style */
+  .xstyle {
+    position: absolute;
+    width: 37%;
+    height: 36px;
+    bottom: -1px;
+    left: -20px;
+    transform: skewX(40deg);
+    background: #fff;
+  }
+
+  /* 1.2  Title and Contatct Information */
+  .acer-header__title-contact {
+    position: relative;
+    height: 300px;
+    padding: 5px;
+  }
+
+  /* Logo - Title */
+  .acer-header__logo-title {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .acer-header__acer-logo {
+    position: absolute;
+    width: 23%;
+    top: 50%;
+    left: 0;
+    padding: 5px;
+    transform: translateY(-50%);
+  }
+
+  .acer-header__acer-logo img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .acer-header__title {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding-left: 15px;
+  }
+
+  .acer-title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #072c64;
+    font-weight: 600;
+  }
+
+  .acer-sub-title {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #999;
+    font-weight: 900;
+  }
+
+  .acer-header__icon-contact {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    float: left;
+  }
+
+  .acer-header__icon {
+    position: absolute;
+    padding: 5px;
+    width: 30%;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .location-image {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border: 2px solid #f70;
+    border-radius: 50%;
+  }
+
+  .acer-header__contact {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    right: 0;
+    padding-left: 5px;
+    transform: translateY(-50%);
+  }
+
+  .contact-title {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .contact-details {
+    font-size: 9px;
+    font-weight: 600;
+    word-spacing: 1px;
+  }
+
+  /* 1.3 Main Menubar */
+  .acer-header__main-menubar {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: #079;
+  }
+
+  .menubar-wraper {
+    height: 100%;
+    color: #fff;
+  }
+
+  .main-navbar {
+    /*display: none;*/
+    width: 100%;
+    height: 400px;
+    background: red;
+    position: absolute;
+    top: 50px;
+    left: 1px;
+    z-index: 99999;
+    display: none;
+  }
+  
+  .main-navbar-item {
+    position: relative;
+    height: 100%;
+    padding: 11px;
+    box-sizing: padding-box;
+    transition: all .3s ease-in-out;
+  }
+
+  .main-navbar-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border:2px solid transparent;
+    transition: all .3s ease-in-out;
+  }
+  
+  .main-navbar-item:hover:before{ border-top: 2px solid #f90;  }
+
+  .main-navbar-link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #menubar {
+    width: 50px;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+  }
+
+  .get-quote {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    float: right;
+    padding: 16px;
+    background: #f90;
+    display: none;
+  }
+
+  /* Carousel */
+  .acer-carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #999;
+    overflow: hidden;
+  }
+
+  .btan {
+    display: block;
+    padding: 10px 5px;
+    width: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: #0009;
+    z-index: 999;
+  }
+
+  #acer-carousel__left-btan {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  #acer-carousel__right-btan {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  /* acer-carousel-slide  */
+  .carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 500ms ease-in;
+    transition: -webkit-transform 500ms ease-in;
+    -o-transition: transform 500ms ease-in;
+    transition: transform 500ms ease-in;
+    transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
+  }
+
+  .acer-carousel__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #494747;
+  }
+
+  .acer-carousel__freight-box-wraper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* freight-box */
+  .acer-carousel__freight-box {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 20%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+  }
+
+  .acer-carousel__freight-box h2 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 900;
+  }
+
+  .acer-carousel__freight-box span {
+    line-height: 10px;
+    color: #ffa900;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 9px;
+  }
+
+  .acer-carousel__freight-box p {
+    font-size: 9px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.9);
+    font-family: Roboto, sans-serif;
+    word-spacing: 1px;
+  }
+
+  .freight-box-btan {
+    display: inline-block;
+      margin-top: 10px;
+      padding: 4px 9px;
+      background: #1766aa;
+      border-radius: 3px;
+      font-size: 9px;
+      color: #fff;
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+  }
+
+  .acer-carousel__nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    cursor: pointer;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 999;
+  }
+
+  /* carousel -navigation */
+  .carousel-indicator {
+    padding: 5px;
+    margin: 3px;
+    background: #fff5;
+    border-radius: 50%;
+    float: left;
+  }
+
+  .curr-slide {  background: #fff; }
+
+  .is-hidden { display: none; }
+
+
+  /* Safe abd Secure */
+  .acer-safe-secure {
+    position: relative;
+    width: 100%;
+    height: 870px;
+    padding: 20px 0;
+    color: #fff;
+    /*border: 1px solid red;*/
+  }
+
+
+  .acer-safe-secure__inner {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  /* affordable */
+  .acer-safe-secure__affordable {
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 20px;
+    background: #ddd;
+    overflow: hidden;
+  }
+
+  .acer-safe-secure__affordable > div {
+    position: absolute;
+    width: 85%;
+    background: #07f;
+    bottom: 35px;
+    right: 0;
+    padding: 5px 10px;
+    border-left: 2px solid #ffa900;
+  }
+
+  .acer-safe-secure p {
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 2;
+  }
+
+  .acer-safe-secure h3 { font-size: 14px; }
+
+  .acer-safe-secure i {
+    line-height: 2;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  /* cargo services*/
+  .acer-cargo-services {
+    width: 100%;
+    background: #079;
+  }
+
+  .acer-cargo-services__cargo-services-header {
+    width: 100%;
+    height: 150px;
+    background: #079;
+  }
+
+  .acer-cargo-services__cargo-services-header h2 {
+    font-size: 15px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+  }
+
+  .acer-cargo-services__cargo-services-header p {
+    margin: 10px 0;
+    font-size: 12px;
+    word-spacing: 2px;
+  }
+
+  .get {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 5px 20px;
+      color: #fff;
+      position: relative;
+    }
+  
+  .get span {
+    position: absolute;
+    bottom: 5%;
+    padding: 6px 8px;
+    border: 1px solid #fff;
+  }
+
+  .acer-cargo-services__our-service {
+    width: 100%;
+    padding: 5px;
+    background: #111;
+  }
+
+  .services-heading {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+
+  .services-heading h2 {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .services-heading h2:after {
+    content: "";
+    position: absolute;
+      border-bottom: 2px solid #fff;
+      width: 70px;
+      bottom: -13px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+  }
+
+  .services-heading i {
+        display: block;
+    font-size: 9px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 5px;
+    font-style: italic;
+    color: #aaa;
+  }
+
+  /* services cards */
+  .service-cards { height: 340px; }
+  
+  .service-cards-wraper {
+    width: 80%;
+    margin: 8px auto;
+    height: 108px;
+    position: relative;
+    border: 1px solid #ffa900;
+  }
+
+  .service-cards-icon {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+
+  .service-cards-icon .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+
+  .service-cards-content {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 40px 10px;
+  }
+
+  .service-cards-content h3 { color: #aaa900; }
+  
+  .service-cards-content span{
+    color: #fff5;
+    font-size: 12px;
+  }
+
+  /* Request Quote */
+  .request {
+    width: 100%;
+    padding: 30px 0; 
+  }
+
+  .request-quote {
+    width: 100%;
+    height: 630px;
+    margin: 0 auto;
+  }
+
+  /* Request Quote left */
+  .request-quote-left {
+    width: 100%;
+    height: 250px;
+    float: left;
+    position: relative;
+  }
+  .quote-left {
+    width:70%;
+    height: 90%;
+    background: #9999;
+    position: absolute;
+    right: 50px;
+  }
+
+  /* Request Quote right */
+  .request-quote-right {
+    width: 100%;
+    height: 400px;
+    float: right;
+    padding: 0 30px;
+    position: relative;
+    text-align: center;
+  }
+
+  .request-quote-right h1 {
+        font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .request-quote-right span {
+        color: #999;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .request-quote-right input[type='text'], select {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-style: italic;
+    color: #0009;
+  }
+
+
+  .request-quote-right textarea {
+    border-radius: 5px;
+    height: 50px;
+    color: #999;
+    width: 100%;
+  }
+
+  .note {
+    margin-top: 20px;
+    float: left;
+    font-size: 12px;
+  }
+
+  .submit {
+    padding: 5px 8px;
+    float: right;
+    font-size: 9px;
+    border-radius: 3px;
+    background: #00f;
+    font-weight: 500;
+  }
+
+  /* OR */
+  .or {
+    width: 100%;
+    height: 350px;
+    background: #990;
+    position: relative;
+  }
+
+  .or-center {
+    width:50px;
+    height: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: #222;
+    -webkit-box-shadow: 0 0 2px 5px #1115;
+            box-shadow: 0 0 2px 5px #1115;
+    z-index: 99;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .or-center h1 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .or-left {
+    width: 100%;
+    height: 50%;
+    background: #2943e9;
+    float: left;
+    position: relative;
+  }
+
+  .or-left-pos {
+    width:100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+  .or-left-pos h1 {
+    font-size: 20px;       
+  }
+
+  .or span {
+    font-size: 9px;
+  }
+
+  .or-btn {
+    display: block;
+    border: 1px solid #fff;
+    padding: 5px 0px;
+    width: 57px;
+    margin: 5px auto;
+  }
+
+  .or-right {
+    width: 100%;
+    height: 50%;
+    float: right;
+    background: #555;
+    position: relative;
+  }
+
+  .or-right-pos {
+    width:100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+
+  .or-right-pos h1 {
+    font-size: 20px;  
+  }
+
+
+  .acer-our-clients {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    padding: 5px;
+  }
+
+  .acer-our-clients__from {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+  }
+
+  .acer-our-clients__title {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+
+  .acer-our-clients__title:after {
+    content: "";
+    display: block;
+    width: 75px;
+    border-bottom: 2px solid #079;
+    margin: 15px auto;
+
+  }
+
+  .acer-our-clients__desc {
+    display: block;
+    font-size: 9px;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+  }
+
+  .acer-our-clients__carousel {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    margin-top: 5px;
+  }
+
+
+  #acer-carousel__left-btanc {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    padding: 5px;
+    color: #1115;
+    background: #ddd5;
+    transform: translateY(-50%);
+    display: none;
+
+  }
+
+  #acer-carousel__right-btanc {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding: 5px;
+    background: #059;
+    color: #fff;
+    transform: translateY(-50%);
+    display: none;
+  }
+
+  .acer-our-clients__mails {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mails-content {
+        position: relative;
+    width: 100%;
+    height: 190px;
+    float: left;
+    margin: 5px;
+  }
+
+  .client-message {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    float: left;
+    bottom: 0;
+  }
+
+  .client-message:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ddd9;
+  }
+
+  .client-message:before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    font-size: 70px;
+    color: #f90;
+    z-index: 999;
+  }
+
+  .message {
+        position: absolute;
+    top: 10px;
+    left: 0;
+    height: 100%;
+    padding: 20px 10px 0;
+    background: #ddd9;
+    font-size: 10px;
+  }
+
+  .client-profile {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    float: left;
+    bottom: 0;
+  }
+
+  .pic {
+    position: relative;
+    top: 35px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    float: left;
+    background: #aaa5;
+    border-radius: 50%;
+  }
+
+  .name {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    float: right;
+    right: 30px;
+    top: 60px;
+  }
+
+  .name h3 {
+    font-style: 12px;
+    color: #f90; }
+
+  .name span {
+    font-style: italic;
+    font-size: 9px;
+  }
+
+  .acer-our-carousel-nav {
+    display: none;
+  }
+
+  .indicate {
+    padding:2px;
+    margin: 4px;
+    display: inline-block;
+    background: #00f5;
+  }
+
+  .selected { background: #00f; }
+
+  /* Freight flex */
+  .freight {
+    width: 100%;
+    height: 750px;
+    padding-top: 100px;
+  }
+
+  .freight-flex-container > div:nth-child(even) {
+    background-color: #ddd;
+    padding: 5px;
+    font-size: 30px;
+    height: 160px;
+    width: 50%;
+    float: left;
+  }
+
+  .freight-flex-container > div:nth-child(odd) {
+    background-color: #15f5;
+    font-size: 30px;
+    height: 160px;
+    width: 50%;
+    float: right;
+  }
+
+  .freight-flex-container h1 { font-size: 15px; }
+
+  .freight-flex-container span {
+    font-size: 9px;
+    color: #f0f;
+  }
+
+  .freight-flex-container p { 
+    font-size: 9px;
+    line-height: 2;
+   }
+
+  .freight-flex-container-odd > div:nth-child(even) {
+    background-color: #15f5;
+    font-size: 15px;
+    height: 160px;
+    width: 50%;
+    float: left;
+  }
+
+  .freight-flex-container-odd > div:nth-child(odd) {
+    background-color: #f1f1f1;
+    padding: 5px;
+    font-size: 10px;
+    height: 160px;
+    width: 50%;
+    float: right;
+  }
+
+  .freight-flex-container-odd h1 { font-size: 15px; }
+
+  .freight-flex-container-odd span {
+    font-size: 9px;
+    color: #f0f;
+  }
+
+  .freight-flex-container-odd p { 
+    font-size: 9px;
+    line-height: 2;
+  }
+
+  .our-blog {
+    position: relative;
+    width: 100%;
+    height: 820px;
+    padding: 5px;
+  }
+
+  .our-blog-header {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .our-blog-header h2 { font-size: 15px; }
+
+  .our-blog-header h3 {
+    border-bottom: 2px solid #3b3be5;
+    width: 80px;
+    margin: 15px auto;
+  }
+
+  .our-blog-header p {
+        margin-top: 0px;
+    opacity: .8;
+    font-style: italic;
+    font-size: 9px;
+  }
+
+  .our-blog-flex {
+    width: 100%;
+    /*height: 1250px;*/
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .our-blog-flex > div {
+        border-right: 5px solid #fff;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-color: #f6f6f6;
+    margin: 30px 0;
+
+  }
+
+ 
+
+  .our-blog-flex-top {
+    height: 50%;
+    background: #333;
+  }
+
+  .our-blog-flex-center {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: #0795;
+  }
+  .our-blog-flex-bottom {
+    width: 85%;
+    height: 50%;
+    padding: 5px;
+  }
+
+  .our-blog-flex-bottom h2 {
+    font-size:14px;
+    margin-top: 10px;
+    font-weight: bold; 
+  }
+
+  .our-blog-flex-bottom span {
+    font-size: 10px;
+    font-style: italic;
+    color: #fad148;
+  }
+
+  .our-blog-flex-bottom p {
+        font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .flex-box-row {
+    height: 100px;
+    width: 60%;
+    background: #aaa;
+    margin:0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .acer-flex {
+    width: 100%;
+    height: 100px;
+    background: #eee;
+  }
+
+  .acer-flex-class {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    margin: 0 auto;
+
+  }
+  
+  .acer-flex-class > div {
+    width: 12%;
+    height: 50%;
+    float: left;
+    background: #ddd;
+    margin: 25px 2%;
+  }
+  
+  .acer-flex-class div:first-child { margin-left: 10px;  }
+
+  /* Footer */
+  .acer-footer {
+    width: 100%;
+    height: 1020px;
+    background: #1f1f1f;
+    position: relative;
+    border: 1px solid red;
+  }
+
+  .subscribe {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    background: #1e71b4;
+    position: relative;
+    color: #fff;
+    padding: 5px;
+  }
+
+  .subscribe span:first-child {
+    position: relative;
+  }
+
+  .subscribe span {
+    letter-spacing: 1px;
+    font-size: 10px;
+    display: block;
+    margin: 10px 5px;
+  }
+
+  .sub-email {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #fff;
+  }
+
+  .sub-btn {
+    padding: 10px 20px;
+    background: #079;
+    border-radius: 5px;
+    width: 100px;
+  }
+
+  /* Footer coloumns */
+  .footer-cols {
+    width:100%;
+    height: 450px;
+    padding: 10px;
+    margin:0 auto;
+    position: relative;
+  }
+
+  .col {
+    width:100%;
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: #fff;
+  }
+
+  .col h3 { font-size: 12px;  }
+
+  .col h3:after {
+    content: "";
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0037ff;
+    width: 35px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .col p {
+    font-size: 9px;
+    margin-bottom: 5px;
+    line-height: 2;
+    color: #aaa;
+  }
+  
+  .col li {
+    float: left;
+    margin: 2px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+  }
+
+  .row {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .tweet-icon {
+    height: 100%;
+    width: 10%;
+    position: relative;
+    float: left;
+    color: #999;
+  }
+
+  .url-path {
+    width: 90%;
+    height: 100%;
+    float: right;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+  .url-path p {
+    padding: 0;
+    margin-bottom: 0;
+    display: inline;
+  }
+
+  .url {
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  .url-path a { color: #079; }
+
+  .url-path span {
+    display: block;
+    font-size: 8px;
+    margin-top: 10px;
+  }
+
+
+
+  .recent-row {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 14px;
+  }
+
+  .recent .recent-row:last-child {  border: none; }
+
+  .recent-row-img {
+    width: 25%;
+    height: 40px;
+    float: left;
+    background: #999;
+  }
+
+  .recent-row-content {
+    width: 75%;
+    height: 40px;
+    float: right;
+    padding-left: 10px;
+  }
+
+  .recent-row-content span {
+    display: block;
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  .recent-row-content i {
+    font-size: 9px;
+    font-style: italic;
+    color: #f49809;
+  }
+
+  .lastchild-row {
+    width: 100%;
+    height: 46px;
+    display: block;
+    padding-top: 4px;
+    overflow: hidden;
+  }
+
+  .lastchild-row span {
+    display: block;
+    float: right;
+    width: 80%;
+    font-size: 8px;
+    margin-top: 8px;
+    line-height: 2;
+  }
+  .lastchild-row img {
+    margin-top: 6px;
+    width: 7%;
+    height: 45%;
+  }
+
+  /* Footer Bottom */
+  .acer-footer__bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*height: 50px;*/
+    color:#fff;
+    background: #000;
+  }
+
+  .bottom {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .bottom-start {
+    display: block;
+    float: left;
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .bottom-end {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .bottom-end li {
+    padding: 0px 5px;
+    font-size: 8px;
+    list-style-type: none;
+    border-right: 1px solid #fff;
+    margin: 5px 0;
+  }
+
+  .bottom-end li:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+}

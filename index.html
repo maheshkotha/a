@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ACERILL</title>
+
+  <!-- Style Sheet -->
+	<link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Font Family  -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+  <!-- Header section start -->
+  <header class="acer-header">
+
+    <div class="acer-header__top-navbar">
+
+      <!-- Top Navigation Bar -->
+      <nav class="acer-header__top-menu  alinement">
+
+        <!-- Top Menu List -->
+        <ul class="top-menu">
+          <li class="top-menu-items">
+            <a href="#" class="top-menu-link">HOME</a></li>
+          <li class="top-menu-items">
+            <a href="#" class="top-menu-link">SERVICES</a></li>
+          <li class="top-menu-items">
+            <a href="#" class="top-menu-link">MY ACCOUNT</a>
+          </li>
+          <li class="top-menu-items">
+            <a href="#" class="top-menu-link">FAQ</a>
+          </li>
+        </ul>
+
+        <!-- Top Social Media Links -->
+        <ul class="social-media-menu">
+          <li class=" social-menu-items">
+            <a href="#" class="social-menu-link"><i class="fa fa-facebook-f"></i></a>
+          </li>
+          <li class="social-menu-items">
+            <a href="#" class="social-menu-link"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="social-menu-items">
+            <a href="#" class="social-menu-link"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="social-menu-items">
+            <a href="#" class="social-menu-link"><i class="fa fa-bell"></i></a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <!-- X style  -->
+      <div class="xstyle"> </div>
+
+    </div>
+
+    <!-- Title - Logo and  Contact - Location -->
+    <div class="acer-header__title-contact alinement">
+      
+      <!-- Logo Title -->
+      <div class="acer-header__logo-title">
+        <div class="acer-header__acer-logo">
+          <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="acer-header__title">
+          <h1 class="acer-title">ACERILL</h1>
+          <span class="acer-sub-title">POWER BYEND CARGO</span>
+        </div>
+      </div>
+
+      <!-- Icon Contac -->
+      <div class="acer-header__icon-contact first-child">
+        <div class="acer-header__icon">
+          <img src="images/location.svg" class="location-image" alt="location">
+        </div>
+        <div class="acer-header__contact">
+          <h3 class="contact-title">OUR LOCATION</h3>
+          <span class="contact-details">09 ACERILL LOGISTIC, AUSTRALIA</span>
+        </div>
+      </div>
+
+      <div class="acer-header__icon-contact">
+        <div class="acer-header__icon">
+          <img src="images/phone.svg" class="location-image" alt="outgoing">
+        </div>
+        <div class="acer-header__contact">
+          <h3 class="contact-title">FEEL FREE TO CALL US</h3>
+          <span class="contact-details">+01 123 456 78</span>
+        </div>
+      </div>
+
+      <div class="acer-header__icon-contact">
+        <div class="acer-header__icon">
+          <img src="images/mail.svg" class="location-image" alt="mail">
+        </div>
+        <div class="acer-header__contact">
+          <h3 class="contact-title">MAIL US FOR QUOTES</h3>
+          <span class="contact-details">INFO@ACERILL.COM</span>
+        </div>
+      </div>
+
+    </div>    
+  
+    <!-- Main Menu   -->
+    <div class="acer-header__main-menubar">
+    
+      <div class="menubar-wraper alinement">
+        
+        <!-- Menu Bar icon -->
+        <div id="menubar">
+          <img src="images/menubar.png" alt="menubar" width="20" height="20">
+        </div>
+        
+        <!-- Manin Navigation -->
+        <nav class="acer-header-main-navbar">
+
+          <ul class="main-navbar">
+            <li class="main-navbar-item">
+              <a href="#" class="main-navbar-link">HOME</a>
+            </li>
+            <li class="main-navbar-item">
+              <a href="#" class="main-navbar-link">ABOUT</a>
+            </li>
+            <li class="main-navbar-item">
+              <a href="#" class="main-navbar-link">SERVICES</a>
+            </li>
+            <li class="main-navbar-item">
+              <a href="#" class="main-navbar-link">TESTIMONIALS</a>
+            </li>
+            <li class="main-navbar-item">
+              <a href="#" class="main-navbar-link">BLOG</a>
+            </li>
+            <li class="main-navbar-item">
+              <a href="#" class="main-navbar-link">PAGES</a>
+            </li>
+            <li class="main-navbar-item">
+              <a href="#" class="main-navbar-link">CONTACT</a>
+            </li>
+          </ul>
+
+        </nav>
+      
+        <div >
+            <span class="get-quote">GET A QUOTE</span>
+        </div>
+
+      </div> 
+
+    </div>  
+  </header>
+
+  <!-- carousel -->
+  <div class="acer-carousel">
+    
+    <span id="acer-carousel__left-btan" class="btan is-hidden"><</span>
+    <span id="acer-carousel__right-btan" class="btan">></span>
+    
+    <!-- carousel track -->
+    <div class="carousel-track">
+      <!--  slide 1 -->
+      <div id="slide1" class="acer-carousel__slide current-slide">
+      <!-- freight-box -->
+        <div class="acer-carousel__freight-box-wraper">
+          <div class="acer-carousel__freight-box">
+            <h2>ROAD FREIGHT</h2>
+            <span>DELIVARY 7-10 DAYS</span>
+            <p>They're creepy and they're kooky mysterious and spooky. Thery're all toghter ooky the admins Family. Belive it or not I'm working on air. I never thought I could feel so free.Belive it or not I'm working on air.</p>
+            <a class="freight-box-btan">KNOW MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- slide 2 -->
+      <div id="slide2" class="acer-carousel__slide">
+        <!-- freight-box -->
+        <div class="acer-carousel__freight-box-wraper">
+          <div class="acer-carousel__freight-box">
+            <h2>ROAD FREIGHT2</h2>
+            <span>DELIVARY 7-10 DAYS</span>
+            <p>They're creepy and they're kooky mysterious and spooky. Thery're all toghter ooky the admins Family. Belive it or not I'm working on air. I never thought I could feel so free.Belive it or not I'm working on air.</p>
+            <a class="freight-box-btan">KNOW MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- slide 3 -->
+      <div id="slide3" class="acer-carousel__slide">
+        <!-- freight-box -->
+        <div class="acer-carousel__freight-box-wraper">
+          <div class="acer-carousel__freight-box">
+            <h2>ROAD FREIGHT3</h2>
+            <span>DELIVARY 7-10 DAYS</span>
+            <p>They're creepy and they're kooky mysterious and spooky. Thery're all toghter ooky the admins Family. Belive it or not I'm working on air. I never thought I could feel so free. Belive it or not I'm working on air.</p>
+            <a class="freight-box-btan">KNOW MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="acer-carousel__nav">
+      <span class="carousel-indicator curr-slide"></span>
+      <span class="carousel-indicator"></span>
+      <span class="carousel-indicator"></span>
+    </div>
+
+  </div>
+
+   <!-- Safe and Secure -->
+  <div class="acer-safe-secure">
+    
+    <div class="acer-safe-secure__inner">
+      <!-- Affordable  -->
+      <div class="acer-safe-secure__affordable">
+        <div>
+          <h3>WE ARE AFFORDABLE</h3>
+          <i>Get a quick quote</i>
+        </div>
+      </div>
+      <div class="acer-safe-secure__affordable">
+        <div>
+          <h3>SAFE AND SECURE</h3>
+          <i>Experienced Team</i>
+          <p>Then one day he was shootin'at some food and up through the ground came a bubblin' crude. Oil that is Till the one day when the lady met this fellow.</p>
+        </div>
+      </div>
+      <div class="acer-safe-secure__affordable">
+        <div>
+          <h3>SPECIAL OFFERS</h3>
+          <i>Get 30% discount</i>
+        </div>
+      </div>
+    </div>    
+
+  </div>
+
+  <!-- Cargo services -->
+  <div class="acer-cargo-services">
+
+    <div class="acer-cargo-services__cargo-services-header">
+      <div class="get">
+        <div>
+          <h2>WE PROVIDE SAFE & AFFORDABLE CARGO SERVICES</h2>
+          <p>Makein their way the only way they know how that's just a little bit more than the law.</p>
+        </div>
+        <span>GET A QUOTE</span>
+      </div>
+    </div>
+    <div class="acer-cargo-services__our-service">
+      <div class="services-heading">
+        <h2>OUR SERVICES</h2>
+        <i>Here's the story of a lovely lady was bringing up three lovely girls. Today still wanted by the govenment they survive as solidiers of fortune. black gold And if you threw a everyone you knew.</i>
+        <div class="service-cards">
+          <div class="service-cards-wraper">
+            <div class="service-cards-icon">
+              <img src="images/ship.svg" class="image" alt="ship" width="40" height="40">
+            </div>
+            <div class="service-cards-content">
+              <h3>CARGO</h3>
+              <span>Its Safe & Secure & best</span>
+            </div>
+          </div>
+          <div class="service-cards-wraper">
+            <div class="service-cards-icon">
+              <img src="images/lorry.svg" class="image" alt="ship" width="40" height="40">
+            </div>
+            <div class="service-cards-content">
+              <h3>LOGISTICS</h3>
+              <span>Its Safe & Secure & best</span>
+            </div>
+          </div>
+          <div class="service-cards-wraper">
+            <div class="service-cards-icon">
+              <img src="images/lorry1.svg" class="image" alt="ship" width="40" height="40">
+            </div>
+            <div class="service-cards-content">
+              <h3>WAREHOUSING</h3>
+              <span>Its Safe & Secure & best</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-cards">
+          <div class="service-cards-wraper">
+            <div class="service-cards-icon">
+              <img src="images/pack.svg" class="image" alt="ship" width="40" height="40">
+            </div>
+            <div class="service-cards-content">
+              <h3>PACKAGING</h3>
+              <span>Its Safe & Secure & best</span>
+            </div>
+          </div>
+          <div class="service-cards-wraper">
+            <div class="service-cards-icon">
+              <img  src="images/aircraft.svg" class="image" alt="ship" width="80" height="80">
+            </div>
+            <div class="service-cards-content">
+              <h3>TRANSPORT</h3>
+              <span>Its Safe & Secure & best</span>
+            </div>
+          </div>
+          <div class="service-cards-wraper">
+            <div class="service-cards-icon">
+              <img src="images/storage.svg" class="image" alt="ship" width="40" height="40">
+            </div>
+            <div class="service-cards-content">
+              <h3 class="service-cards-content-title">STORAGE</h3>
+              <span class="service-cards-content-sub">Its Safe & Secure & best</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!-- Request Quote -->
+  <section class="request">
+      <div class="request-quote">
+        <div class="request-quote-left">
+          <div class="quote-left">
+            
+          </div>
+        </div>
+        <div class="request-quote-right">
+          <div class="right-quote">
+            <h1>REQUEST A QUOTE</h1>
+            <span>Fill in the form below and we will get back to you ASAP</span>
+            <input type="text" name="" placeholder="Your Name">
+            <input type="text" name="" placeholder="Email Address*"><br>
+            <input type="text" name="" placeholder="phone">
+            <select>
+              <option>Service Type</option>
+            </select>
+            <textarea rows="8" cols="51">Describe your Needs</textarea>   
+            <span class="note">Note:Your email address will not be published</span>
+            <span class="submit">SEND REQUEST</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Request Quote section end -->
+
+    <!-- OR section  start-->
+    <section class="or">
+      <div class="or-center">
+        <h1>OR</h1>
+      </div>
+      <div class="or-left">
+        <div class="or-left-pos">
+          <h1>ARE YOU SENDER</h1>
+          <span>If you are a sender? We have some guidelines to help you!</span>
+          <span class="or-btn">CLICK HERE</span>
+        </div>
+      </div>      
+      <div class="or-right">
+        <div class="or-right-pos">
+          <h1>ARE YOU SHIPPER?</h1>
+          <span>If you are a sender? We have some guidelines to help you!</span>
+          <span class="or-btn">CLICK HERE</span>
+        </div>
+      </div>
+    </section>
+    <!-- OR section end -->
+
+
+    <section class="acer-our-clients">
+      <div class="acer-our-clients__from">
+        <h2 class="acer-our-clients__title">WORDS FROM OUR CLIENTS</h2>
+        <i class="acer-our-clients__desc">Here's the story of the lovely lady who was bringing up three very lovely girls. Today still wanted by the government they survive as soldiers of fortune. black gold and if you threw a everyone you knew.</i>
+
+        <div class="acer-our-clients__carousel">
+          <span id="acer-carousel__left-btanc" class="btanc "><</span>
+          <span id="acer-carousel__right-btanc" class="btanc">></span>
+          <div class="acer-our-clients__mails">
+            <div class="mails-content">
+              <div class="client-message">
+                <span class="message">You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name Just two good ol' boys Wouldn't change if they could.</span>
+              </div>
+              <div class="client-profile">
+                <div class="pic"></div>
+                <div class="name">
+                  <h3>Mike Rassel</h3>
+                  <span>Happy Client</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mails-content">
+              <div class="client-message">
+                <span class="message">You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name Just two good ol' boys Wouldn't change if they could.</span>
+              </div>
+              <div class="client-profile">
+                <div class="pic"></div>
+                <div class="name">
+                  <h3>Fish Burn</h3>
+                  <span>Happy Client</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="acer-our-carousel-nav">
+            <span class="indicate"></span>
+            <span class="indicate selected"></span>
+            <span class="indicate"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   
+    <!-- Freight section start -->
+    <section class="freight">
+      <div class="freight-flex-container">
+        <div><!-- emptydiv --></div>
+        <div class="even">
+          <div>
+            <h1>AIR FREIGHT</h1>
+            <span>DELIVARY 3-4 DAYS</span>
+            <p>This is what we call the Muppet Show, Flywing away on a wing and a prayer. Who could it be Belive it or not its just me. just sit right back and you'll hear a tale.</p>
+          </div>
+        </div>
+        <div><!-- empty div --></div>  
+        <div class="even">
+          <div>
+            <h1>OCEAN FREIGHT</h1>
+            <span>DELIVARY 3-4 DAYS</span>
+            <p>This is what we call the Muppet Show, Flywing away on a wing and a prayer. Who could it be Belive it or not its just me. just sit right back and you'll hear a tale.</p>
+          </div>
+        </div>  
+      </div>
+      <div class="freight-flex-container-odd">
+        <div>
+          <div class="even">
+            <div>
+              <h1>ROAD FREIGHT</h1>
+              <span>DELIVARY 3-4 DAYS</span>
+              <p>This is what we call the Muppet Show, Flywing away on a wing and a prayer. Who could it be Belive it or not its just me. just sit right back and you'll hear a tale.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- empty div -->
+        </div>
+        <div>
+          <div class="even">
+            <div>
+              <h1>EXHIBITION SHIPMENT</h1>
+              <span>DELIVARY 3-4 DAYS</span>
+              <p>This is what we call the Muppet Show, Flywing away on a wing and a prayer. Who could it be Belive it or not its just me. just sit right back and you'll hear a tale.</p>
+            </div>
+        </div>
+        </div>  
+        <div><!-- empty div --></div>  
+      </div>
+    </section>
+    <!-- Freight section end -->
+
+    <!-- Latest from our blog section start -->
+    <section class="our-blog">
+      <div class="our-blog-header">
+        <h2>LTEST FROM OUR BLOG</h2>
+        <h3></h3>
+        <p>Here's the story of a lovely lady who was bringing up there very lovely girls. Today still wanted by the government they survive as soldiers of fortune. black gold And if you threw a everyone one knew.</p>
+      </div>
+      <div class="our-blog-flex">
+        <div>
+          <div class="our-blog-flex-top"></div>
+          <div class="our-blog-flex-center"></div>
+          <div class="our-blog-flex-bottom">
+            <h2>FLYING AWAY ON A WING PRAYER</h2>
+            <span>OCT 31, 2015 | COMMENTS 4</span>
+            <p>Here's the story of a lovely lady who was bringing up there very lovely girls. They're creepy and they're mysterios.</p>
+          </div>
+        </div>
+        <div>
+          <div class="our-blog-flex-top"></div>
+          <div class="our-blog-flex-center"></div>
+          <div class="our-blog-flex-bottom">
+            <h2>LOVE BOAT PROMEISES SOMETHING</h2>
+            <span>OCT 31, 2015 | COMMENTS 4</span>
+            <p>Here's the story of a lovely lady who was bringing up there very lovely girls. They're creepy and they're mysterios.</p>
+          </div>
+        </div>
+        <div>
+          <div class="our-blog-flex-top"></div>
+          <div class="our-blog-flex-center"></div>
+          <div class="our-blog-flex-bottom">
+            <h2>YOU CAN SEE OUR TROUBLES ARE</h2>
+            <span>OCT 31, 2015 | COMMENTS 4</span>
+            <p>Here's the story of a lovely lady who was bringing up there very lovely girls. They're creepy and they're mysterios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Latest from our blog section end -->
+
+    <!-- Flexrow section start -->
+    <section class="acer-flex">
+      <div class="acer-flex-class">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <!-- Flexrow sectio end -->
+
+    <!-- Footer section start -->
+    <section class="acer-footer">
+      <div class="subscribe">
+        <span>SUBSCRIBE TO OUR NEWSLETTER</span>
+        <span class="sub-email"> E-MAIL ADDRESS</span>
+        <span class="sub-btn">SUBSCRIBE</span>
+      </div>
+      <div class="footer-cols">
+        <div class="col">
+          <h3>ABOUT US</h3>
+          <p>Feels so right it cant be wrong. Rockin' and rollin' all week long. Flying away on wing and a prayer. Who could it be belive it or its just.</p>
+          <div>
+            <ul class="footer-social-media-icons">
+              <li><i class="fa fa-facebook-f"></i></li>
+              <li><i class="fa fa-twitter"></i></li>
+              <li><i class="fa fa-instagram"></i></i></li>
+              <li><i class="fa fa-bell"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <h3>LATEST TWEETS</h3>
+        <div class="row" style="">
+            <div class="tweet-icon">
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="url-path">
+              <p>Acerill is one of the excellent Logistic stheme<a href="#"> https://Aceerilllogistic/Acerillstic/Acerill</a>
+              </p>
+              <span>1 HOURS AGO</span>
+            </div>
+          </div>
+          <div class="row" style="">
+            <div class="tweet-icon">
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="url-path">
+              <p>Acerill is one of the excellent Logistic stheme<a href="#"> https://Aceerilllogistic/Acerillstic/Acerill</a>
+              </p>
+              <span>1 HOURS AGO</span>
+            </div>
+          </div>
+        </div>
+        <div class="col recent">
+          <h3>RECENT PROPERTICES</h3>
+          <div class="recent-row">
+            <div class="recent-row-img"></div>
+            <div class="recent-row-content">
+              <span>JUST SIT RIGHT BACK YOU'LL HERE</span>
+              <i>OCT 31, 2015</i>
+            </div>
+          </div>
+          <div class="recent-row">
+            <div class="recent-row-img"></div>
+            <div class="recent-row-content">
+              <span>THE POWERLESS IN A WORLD OF CRIMINAL OPERATE</span>
+              <i>OCT 31, 2015</i>
+            </div>
+          </div>
+          <div class="recent-row">
+            <div class="recent-row-img"></div>
+            <div class="recent-row-content">
+              <span>A MAN IS BORN HE'S A MAN OF MEANS</span>
+              <i>OCT 31, 2015</i>
+            </div>
+          </div>
+        </div>
+        <div class="col lastchild">
+          <h3>CONTACT INFO</h3>
+          <div class="lastchild-row">
+            <img src="images/loc-pin.png" alt="location" width="40" height="40">
+            <span>09 DESIGN STREET, DOWN TOWN, SYDNEY, AUSTRALIA</span>     
+          </div>
+          <div class="lastchild-row">
+            <img src="images/call.png" alt="outgoing" width="40" height="40">
+            <span>+01 123 456 78</span>
+          </div>
+          <div class="lastchild-row">
+            <img src="images/fax.png" alt="location" width="40" height="40">
+            <span>+01 123 456 78</span>
+          </div>
+          <div class="lastchild-row">
+            <img src="images/mail.png" alt="location" width="40" height="40">
+            <span>INFO@ACERILL.COM</span>
+          </div>
+        </div>
+      </div>
+      <div class="acer-footer__bottom">
+        <div class="bottom">
+          <span class="bottom-start"> &copy COPYRIGHT 2015 ALL RIGHTS RESERVED </span>
+          <span class="bottom-end">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>PRIVACY POLASY</li>
+            <li>TERMS & CONDITIONS</li>
+          </span>
+        </div>
+      </div>
+    </section>
+   <script src="js/main.js" ></script>
+</body>
+</html>
+
